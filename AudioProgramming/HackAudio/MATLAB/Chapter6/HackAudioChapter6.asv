@@ -1,0 +1,22 @@
+clear; clc;
+
+fs = 48000;
+t = 0:1/fs:3;
+freq = 20;
+
+x = audioread('flute.wav');
+x = x(:,1);
+
+N = length(x);
+y = zeros(N,1);
+
+
+for n = 1:N
+    y(n,1) = x(n,1);
+end
+
+if y == x
+    disp(true);
+else
+    disp(false);
+end

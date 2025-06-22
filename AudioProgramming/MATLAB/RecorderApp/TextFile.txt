@@ -1,0 +1,7 @@
+5
+
+What is my status
+What is my channel
+This is an example of a very long line, the purpose of this line is to test my InsertNextLine function
+Change tag to alpha bravo charlie 1 2 3 
+Tag video as domestic
