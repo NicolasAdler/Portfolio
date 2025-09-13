@@ -1,22 +1,59 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fswiss\fcharset0 Arial-ItalicMT;
-}
-{\colortbl;\red255\green255\blue255;\red26\green26\blue26;\red255\green255\blue255;}
-{\*\expandedcolortbl;;\cssrgb\c13333\c13333\c13333;\cssrgb\c100000\c100000\c100000;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+h1. STI Estimator App
 
-\f0\fs24 \cf0 STI Estimator\
-\
-The STI estimator uses equations found in this research paper:\
-\
-\pard\pardeftab720\partightenfactor0
+A practical tool for acoustics professionals and enthusiasts to quickly estimate the *Speech Transmission Index (STI)* and reverberation characteristics of a room based on surface materials and dimensions.
 
-\f1\fs26 \cf2 \cb3 \expnd0\expndtw0\kerning0
-Leccese, Francesco, Michele Rocca, and Giacomo Salvadori. "Fast estimation of Speech Transmission Index using the Reverberation Time: Comparison between predictive equations for educational rooms of different sizes." 
-\f2\i Applied Acoustics
-\f1\i0  140 (2018): 143-149.\
-\
-To estimate the STI of a small classroom/conference room.  The user will input the number of surfaces of the space, and then the surface areas of these spaces, along with the absorption coefficients for the respective surface areas. Given these parameters the user can then click \'91calculate\'92 and the application will calculate the total absorption of the room, the RT60 at 500 Hz, the STI and the Articulation of Consonants percentage.\
-\
-}
+h2. Overview
+
+The *STI Estimator App* allows users to input key acoustic surfaces of a room, assign material properties, and instantly generate estimates for:
+
+* *Reverberation Time (RT60) at 500 Hz*
+* *Speech Transmission Index (STI)*
+* *Total Absorption of the room*
+* *Articulation Loss Percentage (AL%)*
+
+This tool streamlines early-stage acoustic analysis, helping you evaluate room intelligibility and absorption characteristics efficiently.
+
+h2. Features
+
+* *Dynamic Surface Table Generation*: Input the number of surfaces and generate a table where each surface can be named, sized, and assigned absorption coefficients.
+* *Automatic Calculations*: Once all surface data is entered, the app computes RT60, STI, total room absorption, and AL%.
+* *User-Friendly Interface*: Designed for quick entry and clear visualization of results.
+
+h2. How to Use
+
+# Enter the *number of important surfaces* in the room.
+# Click *Generate Table*.
+# For each surface, enter:
+** Name (e.g., "Ceiling", "Wall A")
+** Dimensions (length, width, or area as applicable)
+** Absorption coefficient (per frequency band, typically at 500 Hz)
+# Click *Enter* to calculate results.
+# View the *RT60*, *STI*, *Total Absorption*, and *Articulation Loss %*.
+
+h2. Example Workflow
+
+# Input 4 surfaces.
+# Name them: "Ceiling", "Floor", "North Wall", "South Wall".
+# Enter dimensions and absorption coefficients.
+# Click *Enter*.
+# Results display:
+* RT60 = 0.8 s
+* STI = 0.62
+* Total Absorption = 45 m² Sabine
+* AL% = 18%
+
+h2. Requirements
+
+* MATLAB or Python (depending on your implementation)
+* GUI support for table input (e.g., MATLAB App Designer, PyQt, Tkinter)
+
+h2. Potential Extensions
+
+* Multi-frequency STI estimation
+* Incorporation of scattering coefficients for more accurate modeling
+* Export results to Excel or PDF
+* Visualization of absorption distribution in the room
+
+h2. License
+
+[Include your preferred license here, e.g., MIT License]
