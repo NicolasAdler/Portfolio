@@ -46,14 +46,3 @@ This tool streamlines early-stage acoustic analysis, helping you evaluate room i
 
 - MATLAB or Python (depending on your implementation)  
 - GUI support for table input (e.g., MATLAB App Designer, PyQt, Tkinter)  
-
-## Potential Extensions
-
-- Multi-frequency STI estimation  
-- Incorporation of scattering coefficients for more accurate modeling  
-- Export results to Excel or PDF  
-- Visualization of absorption distribution in the room  
-
-## License
-
-[Include your preferred license here, e.g., MIT License]
